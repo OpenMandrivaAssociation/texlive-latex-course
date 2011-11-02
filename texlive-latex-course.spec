@@ -1,0 +1,41 @@
+Name:		texlive-latex-course
+Version:	20080822
+Release:	1
+Summary:	A LaTeX course as a projected presentation
+Group:		Publishing
+URL:		http://www.ctan.org/tex-archive/info/latex-course
+License:	GPL
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-course.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-course.doc.tar.xz
+BuildArch:	noarch
+BuildRequires:	texlive-tlpkg
+Requires(post):	texlive-tlpkg
+Conflicts:	texlive-texmf <= 20110705-3
+Conflicts:	texlive-doc <= 20110705-3
+
+%description
+A brief Beamer-based slide presentation on LaTeX, based on
+Rupprecht's LaTeX 2.09 course, which the author has translated
+to English and taken to LaTeX2e/Beamer. Additional material was
+taken from the Short Introduction to LaTeX.
+
+#-----------------------------------------------------------------------
+%files
+%doc %{_texmfdistdir}/doc/latex/latex-course/Graphics/30th-Anniversary-logo.png
+%doc %{_texmfdistdir}/doc/latex/latex-course/Graphics/Ross-Siegel.png
+%doc %{_texmfdistdir}/doc/latex/latex-course/Graphics/campus3.png
+%doc %{_texmfdistdir}/doc/latex/latex-course/LaTeX-Course.pdf
+%doc %{_texmfdistdir}/doc/latex/latex-course/LaTeX-Course.tex
+%doc %{_texmfdistdir}/doc/latex/latex-course/LaTeX-course.prj
+%doc %{_texmfdistdir}/doc/latex/latex-course/README
+%doc %{_texmfdistdir}/doc/latex/latex-course/beamercolorthemeross.sty
+
+#-----------------------------------------------------------------------
+%prep
+%setup -c -a0 -a1
+
+%build
+
+%install
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar doc %{buildroot}%{_texmfdistdir}

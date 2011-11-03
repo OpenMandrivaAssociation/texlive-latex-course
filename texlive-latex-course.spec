@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/latex-course
+# catalog-date 2008-08-22 16:39:18 +0200
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-latex-course
 Version:	20080822
 Release:	1
@@ -29,6 +35,7 @@ taken from the Short Introduction to LaTeX.
 %doc %{_texmfdistdir}/doc/latex/latex-course/LaTeX-course.prj
 %doc %{_texmfdistdir}/doc/latex/latex-course/README
 %doc %{_texmfdistdir}/doc/latex/latex-course/beamercolorthemeross.sty
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -39,3 +46,5 @@ taken from the Short Introduction to LaTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

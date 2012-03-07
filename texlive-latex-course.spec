@@ -1,4 +1,4 @@
-# revision 15878
+# revision 25505
 # category Package
 # catalog-ctan /info/latex-course
 # catalog-date 2008-08-22 16:39:18 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-latex-course
 Version:	20080822
-Release:	2
+Release:	3
 Summary:	A LaTeX course as a projected presentation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex-course
@@ -25,8 +25,8 @@ taken from the Short Introduction to LaTeX.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdistdir}/doc/latex/latex-course/Graphics/30th-Anniversary-logo.png
 %doc %{_texmfdistdir}/doc/latex/latex-course/Graphics/Ross-Siegel.png
+%doc %{_texmfdistdir}/doc/latex/latex-course/Graphics/Thumbs.db
 %doc %{_texmfdistdir}/doc/latex/latex-course/Graphics/campus3.png
 %doc %{_texmfdistdir}/doc/latex/latex-course/LaTeX-Course.pdf
 %doc %{_texmfdistdir}/doc/latex/latex-course/LaTeX-Course.tex

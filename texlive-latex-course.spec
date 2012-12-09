@@ -43,3 +43,21 @@ taken from the Short Introduction to LaTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Mar 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080822-3
++ Revision: 783042
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080822-2
++ Revision: 753177
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080822-1
++ Revision: 718818
+- texlive-latex-course
+- texlive-latex-course
+- texlive-latex-course
+- texlive-latex-course
+

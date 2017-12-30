@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-latex-course
-Version:	20080822
-Release:	11
+Version:	20170414
+Release:	1
 Summary:	A LaTeX course as a projected presentation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex-course

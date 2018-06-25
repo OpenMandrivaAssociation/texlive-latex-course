@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-latex-course
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	A LaTeX course as a projected presentation
 Group:		Publishing

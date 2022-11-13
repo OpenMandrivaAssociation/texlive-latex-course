@@ -1,18 +1,12 @@
-# revision 25505
-# category Package
-# catalog-ctan /info/latex-course
-# catalog-date 2008-08-22 16:39:18 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-latex-course
-Version:	20180303
-Release:	2
+Version:	25505
+Release:	1
 Summary:	A LaTeX course as a projected presentation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex-course
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-course.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-course.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-course.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-course.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -36,28 +30,10 @@ taken from the Short Introduction to LaTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Mar 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080822-3
-+ Revision: 783042
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080822-2
-+ Revision: 753177
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080822-1
-+ Revision: 718818
-- texlive-latex-course
-- texlive-latex-course
-- texlive-latex-course
-- texlive-latex-course
-

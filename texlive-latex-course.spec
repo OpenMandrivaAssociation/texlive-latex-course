@@ -1,6 +1,6 @@
 Name:		texlive-latex-course
 Version:	25505
-Release:	1
+Release:	2
 Summary:	A LaTeX course as a projected presentation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex-course
